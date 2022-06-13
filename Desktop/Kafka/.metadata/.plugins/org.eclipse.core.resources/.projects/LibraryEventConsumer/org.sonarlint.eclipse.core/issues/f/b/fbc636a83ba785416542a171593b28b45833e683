@@ -1,0 +1,10 @@
+
+j
+java:S2629"7Use the built-in formatting to construct this argument.(Ï¢•ª8ôºÍ∆í0HÜRMAJORZ
+CODE_SMELL
+t
+java:S3457"AFormat specifiers should be used instead of string concatenation.(Ï¢•ª8ôºÍ∆í0HÖRMAJORZ
+CODE_SMELL
+·
+java:S1130"≠Remove the declaration of thrown exception 'com.fasterxml.jackson.databind.JsonMappingException' which is a subclass of 'com.fasterxml.jackson.core.JsonProcessingException'.(Ô≠ﬁª8ç«ÕÕí0HóRMINORZ
+CODE_SMELL

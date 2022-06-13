@@ -1,0 +1,8 @@
+
+n
+java:S1172"5Remove these unused method parameters "key", "value".(Çÿ¬œÿÿÿÿÿ8‘°á ’0H­RMAJORZ
+CODE_SMELL
+~	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Çÿ¬œÿÿÿÿÿ8÷Ïá ’0H±RMAJORZ
+CODE_SMELL
+
+java:S2142k"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(À³ËŞüÿÿÿÿ8åœ«¡’0H²RMAJORZBUG

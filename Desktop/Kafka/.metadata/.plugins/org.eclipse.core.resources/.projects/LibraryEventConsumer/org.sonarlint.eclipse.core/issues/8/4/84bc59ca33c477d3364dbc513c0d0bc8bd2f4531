@@ -1,0 +1,7 @@
+
+á
+java:S1130"­Remove the declaration of thrown exception 'com.fasterxml.jackson.databind.JsonMappingException' which is a subclass of 'com.fasterxml.jackson.core.JsonProcessingException'.(ÔòØ¾8Ù²ˆÍ’0HæRMINORZ
+CODE_SMELL
+n
+java:S1128";Remove this unused import 'com.kafka.consumer.entity.Book'.(à›Íí8ìñÒÎ’0H½RMINORZ
+CODE_SMELL
