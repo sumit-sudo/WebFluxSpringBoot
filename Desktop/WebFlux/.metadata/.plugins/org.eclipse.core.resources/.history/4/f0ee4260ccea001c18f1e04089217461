@@ -1,0 +1,8 @@
+package com.movie.service.integration;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class ReviewInfoClient {
+
+}

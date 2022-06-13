@@ -1,0 +1,20 @@
+package com.reactive.programming.practice;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.reactive.programming.practice.service.FluxAndMonoGeneratorService;
+
+@SpringBootTest
+class ReactiveProgrammingUsingReactorApplicationTests {
+
+	FluxAndMonoGeneratorService obj=new FluxAndMonoGeneratorService();
+	
+	@Test
+	void contextLoads() {
+		
+		var nameFlux=obj.nameFlux();
+		
+	}
+
+}

@@ -1,0 +1,28 @@
+
+p	java:S106 "9Replace this use of System.out or System.err by a logger.(¥Æµ ýÿÿÿÿ8“Í‚õ“0HïRMAJORZ
+CODE_SMELL
+_
+java:S1602",Remove useless curly braces around statement(•ÚÆà8ŒÄŒõ“0HðRMINORZ
+CODE_SMELL
+d
+java:S1602",Remove useless curly braces around statement(øÐÐ—øÿÿÿÿ8ŒÄŒõ“0HñRMINORZ
+CODE_SMELL
+d
+java:S1602",Remove useless curly braces around statement(›Þ§§þÿÿÿÿ8ŒÄŒõ“0HòRMINORZ
+CODE_SMELL
+l	java:S125"<This block of commented-out lines of code should be removed.(µðóùÿÿÿÿHóRMAJORZ
+CODE_SMELL
+^
+java:S1602",Remove useless curly braces around statement(ü°°68ŒÄŒõ“0HôRMINORZ
+CODE_SMELL
+_
+java:S1602",Remove useless curly braces around statement(Å›¡8“Í‚õ“0HõRMINORZ
+CODE_SMELL
+k	java:S106"9Replace this use of System.out or System.err by a logger.(Ëð†Ÿ8ŒÄŒõ“0HöRMAJORZ
+CODE_SMELL
+k	java:S106"9Replace this use of System.out or System.err by a logger.(Ëð†Ÿ8ŒÄŒõ“0H÷RMAJORZ
+CODE_SMELL
+j	java:S106"9Replace this use of System.out or System.err by a logger.(ðÅ€8ŒÄŒõ“0HøRMAJORZ
+CODE_SMELL
+j	java:S106"9Replace this use of System.out or System.err by a logger.(ðÅ€8ŒÄŒõ“0HùRMAJORZ
+CODE_SMELL

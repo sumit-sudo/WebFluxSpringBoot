@@ -1,0 +1,40 @@
+package com.movie.info;
+
+import static org.mockito.Mockito.when;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient;
+import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.web.reactive.server.WebTestClient;
+
+import com.movie.info.controller.MovieInfoController;
+import com.movie.info.dao.MovieInfoRepo;
+import com.movie.info.model.MovieInfo;
+
+import reactor.core.publisher.Mono;
+
+@AutoConfigureWebTestClient
+@WebFluxTest(controllers = MovieInfoController.class)
+public class ControllerUnitTest {
+	
+	@Autowired
+	WebTestClient webTestClient;
+	@MockBean
+	MovieInfoRepo movieInfoRepo;
+	
+	@Test
+	public void testAllMovieList() {
+		
+		var movie=new MovieInfo("101", "3 Idiots", 2011, List.of("Amir Khan","Sumit Sinha"), LocalDate.parse("2011/08/06"));
+		
+		when(movieInfoRepo.save(movie)).thenReturn(Mono.just(new MovieInfo("101", "3 Idiots", 2011, List.of("Amir Khan","Sumit Sinha"), LocalDate.parse("2011/08/06")));
+		
+		
+	}
+
+}

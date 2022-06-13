@@ -1,0 +1,8 @@
+package com.movie.service.domain;
+
+public class Movie {
+	
+	MovieInfo movieInfo;
+	List<Review> review;
+
+}

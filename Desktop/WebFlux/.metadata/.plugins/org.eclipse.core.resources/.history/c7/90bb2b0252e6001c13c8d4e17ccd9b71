@@ -1,0 +1,24 @@
+package com.reactive.programming.practice;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.reactive.programming.practice.service.FluxAndMonoGeneratorService;
+
+@SpringBootApplication
+public class ReactiveProgrammingUsingReactorApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ReactiveProgrammingUsingReactorApplication.class, args);
+		FluxAndMonoGeneratorService obj=new FluxAndMonoGeneratorService();
+		//obj.chechkingFluxImmutability().subscribe(name->{
+		obj.nameFlux()).subscribe(name->{
+			System.out.println("Flux name is "+name);
+		});
+		
+		obj.nameMono().subscribe(name->{
+			System.out.println("Mono Name "+name);
+		});
+	}
+
+}

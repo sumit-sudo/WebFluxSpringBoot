@@ -1,0 +1,27 @@
+package com.reactive.programming.practice.service;
+
+import java.util.List;
+
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+
+class FluxAndMonoCreation{
+	
+	public Flux<String> nameFlux(){
+		return Flux.fromIterable(List.of("SUMIT","AMIT","RAHUL"));// db ot remote service call
+	}
+	
+	public Mono<String> nameMono(){
+		
+		return Mono.just("KAMAL");
+	}
+}
+public class FluxAndMonoGeneratorService {
+	public static void main(String arg[]) {
+		
+		FluxAndMonoCreation obj=new FluxAndMonoCreation();
+		obj.nameFlux().subscribe(name->{
+			System.out.println("Flux name is "+name);
+		});
+	}
+}

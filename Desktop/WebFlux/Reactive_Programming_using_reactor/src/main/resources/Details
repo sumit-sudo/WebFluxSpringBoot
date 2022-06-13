@@ -1,0 +1,18 @@
+1) Implemented FLUX and MONO concept
+2) Implemented Different types of operator like map(),filter and map filter together as well
+3) Implemented flatMap() and also checked concurrency or Asynchronous nature by adding delay
+4) Implement concat map
+5) Implement flatMap() with MONO 
+6) flatMapMany()
+7) defaultIfEmpty() or switchIfEmpty()
+8) concat() or concatWith() OutPut difference->{"A","B","C","D","E","F"}
+	Once one flux complete execution then after the completion of second flux, the concat method will get invoke
+9) merge and mergeWith() OutPut difference->{"A","D","B","E",,"C","F"}
+	Both the flux will merge parallely/Async having delay by 2 and 3 second
+10) mergeSequential()is used to merge with sequentially i.e ordered is preserved
+11) zip and zipWith() 
+	Input->
+		flux1->("A","B","C")
+		flux2->("D","E","F")
+	Output->
+			("AD","BE","CF")

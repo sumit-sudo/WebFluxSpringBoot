@@ -1,0 +1,45 @@
+
+‹
+java:S1128"XRemove this unused import 'org.springframework.core.type.filter.RegexPatternTypeFilter'.(Ş”ìŸ8†Ìşô“0HƒRMINORZ
+CODE_SMELL
+z
+java:S1612g"BReplace this lambda with method reference 'this::getStringAsChar'.(›÷“¸ÿÿÿÿÿ8†Ìşô“0HRMINORZ
+CODE_SMELL
+s
+java:S1612e"@Replace this lambda with method reference 'String::toUpperCase'.(÷Ô£ö8µÖìô“0H…RMINORZ
+CODE_SMELL
+M
+java:S2119A"Save and re-use this "Random".(ß–òÅ8¤Ù…ó“0H€RCRITICALZBUG
+q
+java:S1612"@Replace this lambda with method reference 'String::toLowerCase'.(ÏˆŠüÿÿÿÿH‘RMINORZ
+CODE_SMELL
+q
+java:S1612["@Replace this lambda with method reference 'String::toLowerCase'.(ÏˆŠüÿÿÿÿHRMINORZ
+CODE_SMELL
+s
+java:S1612H"@Replace this lambda with method reference 'String::toLowerCase'.(Éü¬Á8¤è§ô“0H„RMINORZ
+CODE_SMELL
+€	java:S100%"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á€8€ôÇó“0HŒRMINORZ
+CODE_SMELL
+…	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê¿«Áüÿÿÿÿ8»ğ»ò“0HRMINORZ
+CODE_SMELL
+
+java:S1192"FDefine a constant instead of duplicating this literal "SUMIT" 4 times.(ÍÉì‹şÿÿÿÿ8»ğ»ò“0H†RCRITICALZ
+CODE_SMELL
+ƒ
+java:S1612("KReplace this lambda with method reference 'this::getStringAsCharWithDelay'.(úèû¿øÿÿÿÿ8œÉó“0HúRMINORZ
+CODE_SMELL
+
+java:S1192"FDefine a constant instead of duplicating this literal "RAHUL" 4 times.(ÍÉì‹şÿÿÿÿ8»ğ»ò“0HûRCRITICALZ
+CODE_SMELL
+z
+java:S1612"BReplace this lambda with method reference 'this::getStringAsChar'.(Î“ÛÎøÿÿÿÿ8»ğ»ò“0H‹RMINORZ
+CODE_SMELL
+l
+java:S1612R"@Replace this lambda with method reference 'String::toLowerCase'.(ëøÿ’HRMINORZ
+CODE_SMELL
+t
+java:S1612]"AReplace this lambda with method reference 'this::splitAsyncMono'.(âò®8Úê®ô“0HRMINORZ
+CODE_SMELL
+s	java:S125"<This block of commented-out lines of code should be removed.(øËÁşÿÿÿÿ8‚¾ò“0H‚RMAJORZ
+CODE_SMELL

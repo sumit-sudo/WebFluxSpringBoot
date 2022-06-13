@@ -1,0 +1,32 @@
+package com.reactive.programming.practice.service;
+
+import java.util.List;
+
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+
+public class FluxAndMonoGeneratorService {
+	public Flux<String> nameFlux(){//Reactive sequence
+		return Flux.fromIterable(List.of("SUMIT","AMIT","RAHUL"))
+				.map(s->s.toLowerCase())
+				.log();// db to remote service call
+	}
+	
+	public Flux<String> chechkingFluxImmutability(){//Reactive sequence
+		var immutableFlux=Flux.fromIterable(List.of("SUMIT","AMIT","RAHUL"));
+		immutableFlux.map(s->s.toLowerCase());
+		return immutableFlux;
+		// Here, map won't work as the nature of flux is immutable,
+		// In the above we have attached the map operator with the actual 
+		// data source i.e Flux and that is why It was mutable
+	}
+	
+	
+	
+	
+	public Mono<String> nameMono(){
+		
+		return Mono.just("KAMAL")
+				.map(s->s.toLowerCase());
+	}
+}

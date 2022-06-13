@@ -1,0 +1,11 @@
+package com.movie.info;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.data.cassandra.DataCassandraTest;
+
+@DataCassandraTest
+public class MovieInfoRepoTest {
+
+	@Autowired
+	MovieInfoRepoTest movieInfoRepoTest;
+}

@@ -1,0 +1,13 @@
+package com.movie.info.exception;
+
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+@RestControllerAdvice
+public class MovieGlobalException {
+
+	@ExceptionHandler(MovieNotSavedException.class)
+	public void itemNotSavedException() {
+		
+	}
+}

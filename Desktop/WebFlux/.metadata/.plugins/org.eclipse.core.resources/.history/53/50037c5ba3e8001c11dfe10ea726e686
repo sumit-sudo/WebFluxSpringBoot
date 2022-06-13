@@ -1,0 +1,22 @@
+package com.movie.review.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.AutoConfigureOrder;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.movie.review.dao.MovieReviewRepo;
+import com.movie.review.model.Review;
+
+import reactor.core.publisher.Flux;
+
+@RestController
+public class MovieReviewController {
+	
+	@Autowired
+	MovieReviewRepo movieReviewRepo;
+
+	public Flux<Review> getReviews() {
+		
+		return movieReviewRepo.findAll();
+	}
+}

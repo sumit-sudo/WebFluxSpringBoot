@@ -1,0 +1,17 @@
+package com.movie.info;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.movie.info.dao.MovieInfoRepo;
+
+@Service
+public class MovieService {
+
+	@Autowired
+	MovieInfoRepo movieInfoRepo;
+	
+	
+	
+	
+}

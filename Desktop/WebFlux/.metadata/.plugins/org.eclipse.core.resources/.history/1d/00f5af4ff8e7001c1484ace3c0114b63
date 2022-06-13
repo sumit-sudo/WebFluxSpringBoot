@@ -1,0 +1,54 @@
+package com.movie.info.controller;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.movie.info.dao.MovieInfoRepo;
+import com.movie.info.model.MovieInfo;
+
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+
+@RestController
+@RequestMapping("/v1")
+public class MovieInfoController {
+	
+	@Autowired
+	MovieInfoRepo movieInfoRepo;
+	
+	@PostMapping("/saveMovies")
+	public Mono<MovieInfo> saveMovies(@RequestBody @Valid MovieInfo movieInfo) {
+		System.out.println("hi");
+		return movieInfoRepo.save(movieInfo);
+	}
+	
+	@GetMapping("/movielist")
+	public Flux<MovieInfo> getMovies() {
+		Flux<MovieInfo> movies = movieInfoRepo.findAll();
+		
+		return movies;
+	}
+	
+	@GetMapping("/movielist/{movieInfoId}")
+	public ResponseEntity<Mono<?>> getMovie(@PathVariable("movieInfoId") String movieInfoId) {
+		
+		Mono<MovieInfo> movie = movieInfoRepo.findById(movieInfoId);
+		if(movie==null) {
+			ResponseEntity.status(HttpStatus.BAD_REQUEST).body("something went wrong");
+		}
+		
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(movie);
+	}
+
+	
+	
+}

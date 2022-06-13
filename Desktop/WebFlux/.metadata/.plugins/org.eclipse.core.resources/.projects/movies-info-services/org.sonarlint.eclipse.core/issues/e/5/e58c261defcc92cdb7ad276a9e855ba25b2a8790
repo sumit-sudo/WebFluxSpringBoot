@@ -1,0 +1,14 @@
+
+c	java:S106 "9Replace this use of System.out or System.err by a logger.(Ó÷îZHäRMAJORZ
+CODE_SMELL
+„
+java:S1602/"SRemove useless curly braces around statement and then remove useless return keyword(î£„¤ÿÿÿÿÿHåRMINORZ
+CODE_SMELL
+f	java:S1255"<This block of commented-out lines of code should be removed.(®àÑHæRMAJORZ
+CODE_SMELL
+Š
+java:S1488&"^Immediately return this expression instead of assigning it to the temporary variable "movies".(ˆ‚÷»HçRMINORZ
+CODE_SMELL
+´
+java:S4449!"ˆAnnotate the parameter with @javax.annotation.Nullable in constructor declaration, or make sure that null can not be passed as argument.(ËŒÓSHêRMAJORZ
+CODE_SMELL

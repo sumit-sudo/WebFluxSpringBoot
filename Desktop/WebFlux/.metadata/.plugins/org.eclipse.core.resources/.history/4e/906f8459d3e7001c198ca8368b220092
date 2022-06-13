@@ -1,0 +1,32 @@
+package com.movie.info;
+
+import java.time.LocalDate;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient;
+import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.web.reactive.server.WebTestClient;
+
+import com.movie.info.dao.MovieInfoRepo;
+import com.movie.info.model.MovieInfo;
+
+@AutoConfigureWebTestClient
+@WebFluxTest
+public class ControllerUnitTest {
+	
+	@Autowired
+	WebTestClient webTestClient;
+	@MockBean
+	MovieInfoRepo movieInfoRepo;
+	
+	@Test
+	public void testAllMovieList() {
+		
+		var movie=new MovieInfo("101", "3 Idiots", 2011, List.of("Amir Khan","Sumit Sinha"), LocalDate.parse("2011/08/06"));
+		
+		
+	}
+
+}

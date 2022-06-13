@@ -1,0 +1,67 @@
+package com.reactive.programming.practice.service;
+
+import java.time.Duration;
+import java.util.List;
+import java.util.Random;
+
+import org.springframework.core.type.filter.RegexPatternTypeFilter;
+
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+
+
+public class FluxAndMonoGeneratorService {
+	public Flux<String> nameFlux(){//Reactive sequence
+		return Flux.fromIterable(List.of("SUMIT","AMIT","RAHUL"))
+				.map(s->s.toLowerCase())
+				.filter(s->s.length()>4)
+				.map(s->s.length()+"-"+s)// displaying name along with length
+				.log();// db to remote service call
+	}
+	/*
+	 * FlatMap transform one source element to a Flux of 1 to N
+	 * "ALEX"->Flux.just("A","L","E","X");
+	 * eg we might get list of id from table and then we might haver to get details corresponding to each ID
+	 * (101,102,103,104) --> Flux.just((101,"SUmit",1000),(102,"AMIT",2000) so on) 
+	 */
+	
+	public Flux<String> nameFlux_flatMap(){
+		return Flux.fromIterable(List.of("SUMIT","AMIT","RAHUL"))
+				.filter(s->s.length()>4)
+				.flatMap(s->getStringAsChar(s))// convert from Flux<Flux<String>> to Flux<String>
+				//.flatMap(s->getStringAsCharWithDelay(s)) checking Asynchronous nature of flatMap,
+				// As It is asynchronous, It wont wait for completion of method getStringAsCharWithDelay, 
+				// and because of this, Ouput is random
+				.log();// db to remote service call
+				
+	}
+	
+	public Flux<String> getStringAsChar(String str){
+		var charAaary=str.split("");
+		return Flux.fromArray(charAaary);
+	}
+	
+	public Flux<String> getStringAsCharWithDelay(String str){
+		var charAaary=str.split("");
+		var delay=new Random().nextInt(10000);
+		return Flux.fromArray(charAaary).delayElements(Duration.ofMillis(delay));
+	}
+	
+	public Flux<String> chechkingFluxImmutability(){//Reactive sequence
+		var immutableFlux=Flux.fromIterable(List.of("SUMIT","AMIT","RAHUL"));
+		immutableFlux.map(s->s.toLowerCase());
+		return immutableFlux;
+		// Here, map won't work as the nature of flux is immutable,
+		// In the above we have attached the map operator with the actual 
+		// data source i.e Flux and that is why It was mutable
+	}
+	
+	
+	
+	
+	public Mono<String> nameMono(){
+		
+		return Mono.just("KAMAL")
+				.map(s->s.toLowerCase());
+	}
+}

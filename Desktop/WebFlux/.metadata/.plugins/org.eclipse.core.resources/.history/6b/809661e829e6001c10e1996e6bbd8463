@@ -1,0 +1,8 @@
+package com.reactive.programming.practice.service;
+
+public class FluxAndMonoGeneratorService {
+
+	public static void main(String arg[]) {
+		
+	}
+}

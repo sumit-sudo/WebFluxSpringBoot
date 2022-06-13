@@ -1,0 +1,5 @@
+package com.movie.service.integration;
+
+public class ReviewInfoClient {
+
+}

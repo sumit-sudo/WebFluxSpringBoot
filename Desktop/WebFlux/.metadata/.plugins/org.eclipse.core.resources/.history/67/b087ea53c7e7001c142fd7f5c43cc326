@@ -1,0 +1,24 @@
+package com.movie.info.dao;
+
+import org.springframework.data.cassandra.repository.ReactiveCassandraRepository;
+import org.springframework.stereotype.Repository;
+
+import com.movie.info.model.MovieInfo;
+
+@Repository
+public interface MovieInfoRepo extends ReactiveCassandraRepository<MovieInfo, String> {
+/*
+ * Perform the Repository layer unit testing
+ * Perform the Controller layer unit testing (Get and Post)
+ * Perform Integration Testing for post request
+ * Check the return type of each end point, its either mono or flux
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+}

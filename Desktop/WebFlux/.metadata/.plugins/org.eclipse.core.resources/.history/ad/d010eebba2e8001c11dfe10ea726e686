@@ -1,0 +1,5 @@
+package com.movie.review.dao;
+
+public interface MovieReviewRepo {
+
+}

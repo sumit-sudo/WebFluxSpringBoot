@@ -1,0 +1,20 @@
+package com.movie.info.exception;
+
+import java.time.LocalDateTime;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+@RestControllerAdvice
+public class MovieGlobalException {
+
+	@ExceptionHandler(MovieNotSavedException.class)
+	public  ResponseEntity<MoviesErrorMessage> itemNotSavedException(MovieNotSavedException exe) {
+		MoviesErrorMessage obj=new MoviesErrorMessage(
+				HttpStatus.BAD_REQUEST.value(), exe.getMessage(), LocalDateTime.now());
+		
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(obj);
+	}
+}

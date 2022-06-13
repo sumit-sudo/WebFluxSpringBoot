@@ -1,0 +1,5 @@
+package com.movie.review.model;
+
+public class Review {
+
+}

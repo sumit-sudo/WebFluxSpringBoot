@@ -1,0 +1,28 @@
+package com.movie.service.integration;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.reactive.function.client.WebClient;
+
+import com.movie.service.domain.Movie;
+import com.movie.service.domain.MovieInfo;
+
+import reactor.core.publisher.Mono;
+
+public class MoviesInfoClientIntegration {
+
+	@Autowired
+	WebClient webClient;
+	
+	String movieInfoBaseUrl="http://localhost:8080/v1/movielist/";
+	public Mono<Movie> getMovieInfo(String movieId){
+		
+		movieInfoBaseUrl.concat(movieId);
+		System.out.println("movieInfoBaseUrl"+movieInfoBaseUrl);
+		return webClient
+				.get()
+				.uri(movieInfoBaseUrl)
+				.retrieve()
+				.bodyToMono(MovieInfo.class)
+				.log();
+	}
+}

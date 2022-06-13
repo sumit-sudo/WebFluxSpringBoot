@@ -1,0 +1,16 @@
+package com.reactive.programming.practice.service;
+
+import java.util.List;
+
+import reactor.core.publisher.Flux;
+
+public class FluxAndMonoGeneratorService {
+
+	public Flux<String> nameFlux(){
+		return Flux.fromIterable(List.of("SUMIT","AMIT","RAHUL"));
+	}
+	public static void main(String arg[]) {
+		
+		
+	}
+}

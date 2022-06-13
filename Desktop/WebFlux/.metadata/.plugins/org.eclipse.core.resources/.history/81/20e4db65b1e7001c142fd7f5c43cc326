@@ -1,0 +1,18 @@
+package com.movie.info.model;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import org.springframework.data.cassandra.core.mapping.PrimaryKey;
+import org.springframework.data.cassandra.core.mapping.Table;
+
+@Table
+public class MovieInfo {
+
+	@PrimaryKey
+	private String movieInfoId;
+	private String name;
+	private Integer yer;
+	private List<String> cast;
+	private LocalDate releaseDate;
+}

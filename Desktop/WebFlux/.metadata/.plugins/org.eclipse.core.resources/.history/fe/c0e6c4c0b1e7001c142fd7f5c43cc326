@@ -1,0 +1,5 @@
+package com.movie.info.dao;
+
+public interface MovieInfoRepo {
+
+}

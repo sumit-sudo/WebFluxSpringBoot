@@ -1,0 +1,9 @@
+package com.movie.info.dao;
+
+import org.springframework.data.cassandra.repository.ReactiveCassandraRepository;
+
+import com.movie.info.model.MovieInfo;
+
+public interface MovieInfoRepo extends ReactiveCassandraRepository<MovieInfo, String> {
+
+}

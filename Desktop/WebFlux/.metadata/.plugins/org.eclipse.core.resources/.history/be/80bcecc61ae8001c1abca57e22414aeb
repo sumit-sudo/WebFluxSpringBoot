@@ -1,0 +1,10 @@
+package com.movie.info.exception;
+
+import java.time.LocalDateTime;
+
+public class MovieMessage {
+
+	private String message;
+	private int statuscode;
+	private LocalDateTime timestamp;
+}

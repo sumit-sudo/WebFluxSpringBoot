@@ -1,0 +1,11 @@
+package com.movie.info;
+
+import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient;
+import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest;
+import org.springframework.boot.test.autoconfigure.webservices.client.AutoConfigureWebServiceClient;
+
+@WebFluxTest
+@AutoConfigureWebTestClient
+public class IntegrationTesting {
+
+}

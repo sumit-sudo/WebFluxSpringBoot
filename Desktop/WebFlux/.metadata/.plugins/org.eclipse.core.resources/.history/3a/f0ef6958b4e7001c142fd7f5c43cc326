@@ -1,0 +1,25 @@
+package com.movie.info;
+
+import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.data.cassandra.DataCassandraTest;
+
+import com.movie.info.model.MovieInfo;
+
+@DataCassandraTest
+public class MovieInfoRepoTest {
+
+	@Autowired
+	MovieInfoRepoTest movieInfoRepoTest;
+	
+	@BeforeEach
+	public void setUp() {
+		
+		var movieList=List.of(new MovieInfo(null, null, null, null, null),
+				new MovieInfo(null, null, null, null, null),
+				new MovieInfo(null, null, null, null, null),
+				new MovieInfo(null, null, null, null, null));
+	}
+}

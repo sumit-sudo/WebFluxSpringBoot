@@ -1,0 +1,18 @@
+package com.movie.service.integration;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.reactive.function.client.WebClient;
+
+import com.movie.service.domain.Movie;
+
+import reactor.core.publisher.Mono;
+
+public class MoviesInfoClientIntegration {
+
+	@Autowired
+	WebClient webClient;
+	
+	public Mono<Movie> getMovieInfo(String movieId){
+		
+	}
+}
