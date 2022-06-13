@@ -1,0 +1,8 @@
+package com.sumit.graphql.entities;
+
+public class Author {
+
+	private int id;
+	private int age;
+	private String name;
+}

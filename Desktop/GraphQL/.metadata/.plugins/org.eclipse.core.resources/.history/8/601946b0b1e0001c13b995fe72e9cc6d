@@ -1,0 +1,12 @@
+package com.sumit.graphql.entities;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Tutorial {
+
+	private int id;
+	private String description;
+	private String description;
+	private int author_id;
+}

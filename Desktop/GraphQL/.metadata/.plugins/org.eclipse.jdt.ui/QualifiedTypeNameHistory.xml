@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.sumit.graphql.dao.TutorialDao"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.coxautodev.graphql.tools.GraphQLMutationResolver"/>
+    <fullyQualifiedTypeName name="graphql.kickstart.tools.GraphQLQueryResolver"/>
+    <fullyQualifiedTypeName name="com.coxautodev.graphql.tools.GraphQLResolver"/>
+    <fullyQualifiedTypeName name="com.coxautodev.graphql.tools.GraphQLQueryResolver"/>
+    <fullyQualifiedTypeName name="com.sumit.graphql.entities.Author"/>
+    <fullyQualifiedTypeName name="com.sumit.graphql.entities.Tutorial"/>
+</qualifiedTypeNameHistroy>

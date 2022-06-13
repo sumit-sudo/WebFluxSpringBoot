@@ -1,0 +1,10 @@
+type Author{
+	id : ID!
+	age : INT
+	name : String!
+	}
+
+type Query{
+	findAllAuthors():[Author]!
+
+}

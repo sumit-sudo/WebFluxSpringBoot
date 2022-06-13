@@ -1,0 +1,16 @@
+package com.sumit.graphql.resolver;
+
+import com.coxautodev.graphql.tools.GraphQLResolver;
+import com.sumit.graphql.entities.Tutorial;
+
+public class TutorialResolver implements GraphQLResolver<Tutorial> {
+
+	/*
+	 * For complex fields like author in Tutorial, we have to resolve the value of
+	 * those fields. TutorialResolver implements GraphQLResolver interface and has
+	 * getAuthor() method.
+	 */
+	
+	
+	
+}

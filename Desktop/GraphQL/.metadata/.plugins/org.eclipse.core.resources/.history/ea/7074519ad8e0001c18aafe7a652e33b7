@@ -1,0 +1,9 @@
+package com.sumit.graphql.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.sumit.graphql.entities.Author;
+
+public interface AuthorDao extends JpaRepository<Author, Integer>{
+
+}

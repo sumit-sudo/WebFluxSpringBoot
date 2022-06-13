@@ -1,0 +1,11 @@
+package com.sumit.graphql.entities;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Author {
+
+	private int id;
+	private int age;
+	private String name;
+}

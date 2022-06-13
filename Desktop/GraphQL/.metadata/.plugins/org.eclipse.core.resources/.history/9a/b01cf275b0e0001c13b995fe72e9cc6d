@@ -1,0 +1,7 @@
+package com.sumit.graphql.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TutorialDao extends JpaRepository<, ID>{
+
+}

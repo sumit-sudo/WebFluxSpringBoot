@@ -1,0 +1,8 @@
+package com.sumit.graphql.resolver;
+
+
+
+
+public class Mutation {
+
+}

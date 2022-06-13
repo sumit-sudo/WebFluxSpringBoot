@@ -1,0 +1,7 @@
+package com.sumit.graphql.resolver;
+
+import org.springframework.boot.autoconfigure.graphql.GraphQlSourceBuilderCustomizer;
+
+public class Query implements {
+
+}

@@ -1,0 +1,19 @@
+package com.sumit.graphql.resolver;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.coxautodev.graphql.tools.GraphQLQueryResolver;
+import com.sumit.graphql.dao.AuthorDao;
+
+@Component
+public class Query implements GraphQLQueryResolver {
+
+	@Autowired
+	private AuthorDao author;
+	public  findAllAuthors()
+	{
+		
+	}
+	
+}

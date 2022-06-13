@@ -1,0 +1,12 @@
+package com.sumit.graphql.resolver;
+
+import com.coxautodev.graphql.tools.GraphQLQueryResolver;
+
+public class Query implements GraphQLQueryResolver {
+
+	public  findAllAuthors()
+	{
+		
+	}
+	
+}

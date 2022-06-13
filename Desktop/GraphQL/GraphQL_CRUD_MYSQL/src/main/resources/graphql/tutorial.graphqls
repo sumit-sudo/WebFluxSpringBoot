@@ -1,0 +1,20 @@
+type Tutorial{
+	id : INT!
+	description : String!
+	title : String!
+	author : Author!
+	}
+extends type Query{
+	findAllTutorial : [tutorial]!
+	countTutorials : Long
+	}
+extends type Mutation{
+	createTutorial(title: String!, description: String, author: ID!): Tutorial!
+	updateTutorial(id: ID!, title: String, description: String): Tutorial!
+	deleteTutorial(id: ID!): Boolean
+	}
+	
+#GraphQL accepts only one root Query and one root Mutation types, 
+#so we need to bring all the query and mutation operations into the root Types.
+#But in the schemas above, we want to split the logic for each model. How to do this?
+#We extend the Query and Mutation types.

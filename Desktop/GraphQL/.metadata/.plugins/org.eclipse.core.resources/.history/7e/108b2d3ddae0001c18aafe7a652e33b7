@@ -1,0 +1,6 @@
+spring.datasource.url=jdbc:mysql://localhost:3306/item?useSSL=false&useUnicode=yes&characterEncoding=UTF-8&allowPublicKeyRetrieval=true&serverTimezone=UTC
+spring.datasource.username=graphql_demo
+spring.datasource.password=sumit06420
+spring.jpa.hibernate.ddl-auto= update
+
+graphql.servlet.mapping: /apis/graphql

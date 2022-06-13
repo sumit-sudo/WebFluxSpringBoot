@@ -1,0 +1,6 @@
+type Tutorial{
+	id : INT
+	description : String
+	title : String
+	author : Author
+	}

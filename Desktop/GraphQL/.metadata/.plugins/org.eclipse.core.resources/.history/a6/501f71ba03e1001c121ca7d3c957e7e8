@@ -1,0 +1,9 @@
+package com.sumit.graphql.resolver;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Mutation {
+
+	
+}

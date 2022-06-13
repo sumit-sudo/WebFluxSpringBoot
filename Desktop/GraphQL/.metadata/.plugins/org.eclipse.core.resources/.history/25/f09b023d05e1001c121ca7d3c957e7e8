@@ -1,0 +1,11 @@
+package com.sumit.graphql.resolver;
+
+public class TutorialResolver {
+
+	/*
+	 * For complex fields like author in Tutorial, we have to resolve the value of
+	 * those fields. TutorialResolver implements GraphQLResolver interface and has
+	 * getAuthor() method. resolver/TutorialResolver.java
+	 */
+	
+}

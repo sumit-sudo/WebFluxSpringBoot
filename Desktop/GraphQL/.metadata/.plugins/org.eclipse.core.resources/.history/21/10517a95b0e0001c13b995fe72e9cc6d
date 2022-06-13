@@ -1,0 +1,5 @@
+package com.sumit.graphql.entities;
+
+public class Author {
+
+}
